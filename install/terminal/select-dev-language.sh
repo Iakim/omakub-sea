@@ -39,7 +39,7 @@ if [[ -n "$languages" ]]; then
       ;;
     Java)
       # Install Java JDK AZUL ZULU 21.40.17
-      bash -c "$(wget -qO- https://cdn.azul.com/zulu/bin/zulu21.40.17-ca-jdk21.0.6-linux_amd64.deb | sudo dpkg -i)"
+      bash -c "$(wget https://cdn.azul.com/zulu/bin/zulu21.40.17-ca-jdk21.0.6-linux_amd64.deb && sudo dpkg -i zulu21.40.17-ca-jdk21.0.6-linux_amd64.deb)"
       ;;
     esac
   done
