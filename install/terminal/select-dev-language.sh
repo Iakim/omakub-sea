@@ -38,7 +38,8 @@ if [[ -n "$languages" ]]; then
       bash -c "$(curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs)" -- -y
       ;;
     Java)
-      mise use --global java@latest
+      # Install Java JDK AZUL ZULU 21.40.17
+      bash -c "$(wget -qO- https://cdn.azul.com/zulu/bin/zulu21.40.17-ca-jdk21.0.6-linux_amd64.deb | sudo dpkg -i)"
       ;;
     esac
   done
