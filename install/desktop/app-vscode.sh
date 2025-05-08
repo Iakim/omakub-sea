@@ -6,7 +6,7 @@ rm -f packages.microsoft.gpg
 cd -
 
 sudo apt update -y
-sudo apt install -y code --no-sandbox
+sudo apt install -y code
 
 mkdir -p ~/.config/Code/User
 cp ~/.local/share/omakub/configs/vscode.json ~/.config/Code/User/settings.json
